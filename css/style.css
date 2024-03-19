@@ -1,0 +1,76 @@
+/* NavBar */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background: #fd0000;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.navbar a {
+    position: relative;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+ 
+}
+/* Actual Css */
+.row {
+    text-align: center;
+  }
+hr {
+    background-color: black;
+    border: 2px solid black;
+    height: 6px;
+}
+h1 {
+    position: relative;
+    font-size: 110px;
+    z-index: 2;
+}
+body {
+    overflow: hidden;
+}
+.bigimg {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    height: 700px;
+    z-index: 1;
+}
+.overlap {
+    position: relative;
+    margin-top: 150px;
+    z-index: 2;
+}
+.text {
+    font-size: 20px;
+    text-align: start;
+    color: #000000;
+    font-weight: bolder;
+}
+.btn-success {
+    border: #80ea99 ;
+    background-color: #80ea99 ;
+    border-radius: 70px 70px 70px 70px
+}
+img {
+    height: 20px;
+}
