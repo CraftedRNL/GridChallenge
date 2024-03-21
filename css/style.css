@@ -44,6 +44,7 @@ hr {
     position: fixed;
     z-index: 21;
     opacity: 1;
+    left: 0px;
 }
 h1 {
     position: relative;
