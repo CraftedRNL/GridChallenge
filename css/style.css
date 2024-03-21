@@ -7,7 +7,8 @@
     padding: 20px 100px;
     display: flex;
     align-items: center;
-    z-index: 100;
+    z-index: 20;
+    background-color: white;
 }
 
 .navbar a::before {
@@ -19,39 +20,45 @@
     height: 2px;
     background: #fd0000;
     transition: .3s;
+    z-index: 20;
 }
 .navbar a:hover::before {
     width: 100%;
+    z-index: 20;
 }
 .navbar a {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
     font-weight: 500;
     text-decoration: none;
- 
+    z-index: 20;
 }
 /* Actual Css */
-.row {
-    text-align: center;
-  }
+
 hr {
-    background-color: black;
-    border: 2px solid black;
-    height: 6px;
+    background-color: rgb(0, 0, 0);
+    border: 7px solid rgb(0, 0, 0);
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 21;
+    opacity: 1;
 }
 h1 {
     position: relative;
     font-size: 110px;
     z-index: 2;
+    text-align: start;
+    display: flex;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .bigimg {
     position: absolute;
-    right: 100px;
-    top: 100px;
+    right: 95px;
+    top: 120px;
     height: 700px;
     z-index: 1;
 }
@@ -61,16 +68,53 @@ body {
     z-index: 2;
 }
 .text {
-    font-size: 20px;
+    font-size: 30px;
     text-align: start;
     color: #000000;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-success {
     border: #80ea99 ;
     background-color: #80ea99 ;
-    border-radius: 70px 70px 70px 70px
+    border-radius: 70px 70px 70px 70px;
+    height: 80px;
+    width: 300px;
 }
 img {
     height: 20px;
+}
+.btn-outline-light {
+    border: solid #8e7bff 2px;
+    background: #8e7bff;
+    border-radius: 70px 70px 70px 70px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 150px;
+}
+.card-body {
+    background-color: #8e7bff;
+    border-radius: 20px 20px 20px 20px ;
+
+    justify-content: center;
+}
+img {
+    height: 80px;
+    display: flex;
+    justify-content: start;
+}
+.white-text {
+    color: white;
+    display: flex;
+    justify-content: start;
+}
+.hor-centr {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    border: none;
 }
